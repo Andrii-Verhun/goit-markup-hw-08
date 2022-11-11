@@ -31,9 +31,25 @@
         background: none;
         cursor: pointer;
 
+        &:hover,&:focus {
+            color: var(--brand-color);
+        }
+
         @media (min-width: 768px) {
             display: none;
         }
+    }
+
+    &__mobile-menu-icon {
+        fill: currentColor;
+    }
+
+    &__navigation {
+        display: none;
+
+        @media (min-width: 768px) {
+                display: flex;
+            }
     }
 
     &__navigation-item:not(:last-child) {

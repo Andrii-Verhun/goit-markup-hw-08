@@ -1,5 +1,4 @@
 .navigation {
-    display: none;
     list-style-type: none;
     font-weight: 500;
     font-size: 14px;
@@ -12,8 +11,8 @@
             transition: color 250ms var(--brand-timefn);
 
             &:visited {
-                    color: inherit;
-                }
+                color: inherit;
+            }
 
             &:hover,&:focus {
                 color: var(--brand-color)
@@ -35,8 +34,4 @@
                 transform: translateY(-75%);
             }
         }
-
-    @media (min-width: 768px) {
-        display: flex;
-    }
 }
