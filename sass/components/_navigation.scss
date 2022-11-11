@@ -1,0 +1,38 @@
+.navigation {
+    display: flex;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &__link {
+            text-decoration: none;
+            color: inherit;
+            transition: color 250ms var(--brand-timefn);
+
+            &:visited {
+                    color: inherit;
+                }
+
+            &:hover,&:focus {
+                color: var(--brand-color)
+            }
+        }
+
+    &__activ {
+        color: var(--brand-color);
+        position: relative;
+
+        &::after {
+                content: "";
+                width: 100%;
+                height: 4px;
+                background-color: var(--brand-color);
+                border-radius: 2px;
+                display: block;
+                position: absolute;
+                transform: translateY(-75%);
+            }
+        }
+}

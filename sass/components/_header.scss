@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    height: 80px;
+
+    &__logo {
+            padding-top: 24px;
+            padding-bottom: 25px;
+            margin-right: 93px;
+        }
+
+    &__logo--black {
+        color: #000;
+        }
+
+    &__navigation-item:not(:last-child) {
+        margin-right: 50px;
+        }
+
+    &__navigation-link {
+        display: block;
+        padding: 32px 0px;
+        }
+
+    &__container-contacts {
+        margin-left: auto;
+        padding: 32px 0px;
+        }
+
+    &__contacts {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--brand-color-text);
+        text-decoration: none;
+        transition: color 250ms var(--brand-timefn);
+
+        &:hover,&:focus {
+                color: var(--brand-color);
+            }
+        }
+
+    &__contacts:not(:last-child) {
+        margin-right: 30px;
+        }
+
+    &__mail-icon,&__tel-icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}
