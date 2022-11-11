@@ -1,5 +1,5 @@
 .navigation {
-    display: flex;
+    display: none;
     list-style-type: none;
     font-weight: 500;
     font-size: 14px;
@@ -35,4 +35,8 @@
                 transform: translateY(-75%);
             }
         }
+
+    @media (min-width: 768px) {
+        display: flex;
+    }
 }
