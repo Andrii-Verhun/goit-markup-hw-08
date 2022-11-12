@@ -2,21 +2,56 @@ $brand-hoverColor: #188CE8;
 
 .hero-section {
     background-color: var(--brand-color-bcg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bcgimg.jpg');
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bcg/bcgimg-mobile.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 200px 0px;
+    padding: 118px 0px;
+
+        @media (max-width: 768) and (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bcg/bcgimg-mobile@2x.jpg');
+        }
+
+        @media (min-width: 768px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bcg/bcgimg-tablet.jpg');
+            
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bcg/bcgimg-tablet@2x.jpg');
+                }
+            }
+
+        @media (min-width: 1200px) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bcg/bcgimg-desktop.jpg');
+            padding: 200px 0px;
+
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bcg/bcgimg-desktop@2x.jpg');
+                }
+            }
 
     &__tagline {
-            max-width: 696px;
-            font-weight: 900;
+        max-width: 360px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFF;
+        font-size: 26px;
+        line-height: 1.62;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        margin: 0 auto 30px auto;
+
+
+        @media (min-width: 1200px) {
             font-size: 44px;
             line-height: 1.36;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            margin: 0 auto 30px auto;
+            max-width: 696px;
+            }
         }
 
     &__top-button {
@@ -35,11 +70,15 @@ $brand-hoverColor: #188CE8;
         letter-spacing: 0.06em;
         color: #FFFFFF;
         margin: 0px auto;
-        padding: 10px 32px;
+        padding: 10px 24px;
         transition: background 250ms var(--brand-timefn);
 
         &:hover,&:focus {
                 background: $brand-hoverColor;
+            }
+
+        @media (min-width: 1200px) {
+            padding: 10px 32px;
             }
         }
 }
