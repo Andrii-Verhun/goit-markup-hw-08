@@ -641,8 +641,8 @@ input {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #FFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -653,6 +653,12 @@ input {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
+}
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__close-button {
   width: 30px;
@@ -681,10 +687,15 @@ input {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media (min-width: 1200px) {
+  .modal__caption {
+    line-height: 1.15;
+  }
 }
 .modal__input-wrapper {
   position: relative;
@@ -740,38 +751,60 @@ input {
 }
 .modal__comment::-webkit-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__comment::-moz-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__comment:-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__comment::-ms-input-placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal__comment::placeholder {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media (min-width: 1200px) {
+  .modal__comment::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal__comment::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal__comment:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal__comment::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal__comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .modal__checkbox {
   position: relative;
@@ -786,8 +819,8 @@ input {
 .modal__check-icon {
   position: absolute;
   fill: var(--brand-color);
-  -webkit-transform: translateY(20%) translateX(-119%);
-          transform: translateY(20%) translateX(-119%);
+  -webkit-transform: translateY(20%) translateX(-125%);
+          transform: translateY(20%) translateX(-125%);
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 250ms var(--brand-timefn);
@@ -802,16 +835,28 @@ input {
   opacity: 1;
 }
 .modal__license-agreement-text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--brand-color-text);
 }
+@media (min-width: 1200px) {
+  .modal__license-agreement-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .modal__license-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--brand-color);
+}
+@media (min-width: 1200px) {
+  .modal__license-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal__send-button {
   position: absolute;
