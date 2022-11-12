@@ -3,29 +3,68 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: flex-start;
 
     &__item {
-            background: #FFF;
-            flex-basis: calc((100% - 60px) / 3);
-            transition: box-shadow 250ms var(--brand-timefn);
+        background: #FFF;
+        transition: box-shadow 250ms var(--brand-timefn);
+        margin-left: auto;
+        margin-right: auto;
 
-            &:hover {
-                    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-                }
+        &:hover {
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            }
+
+        @media (min-width: 768px) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+        @media (min-width: 1200px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
         }
 
     &__box {
-        width: 370px;
+        max-width: 450px;
         height: 294px;
         overflow: hidden;
+
+        @media (min-width: 768px) {
+            max-width: 354px;
+        }
+    
+        @media (min-width: 1200px) {
+            max-width: 370px;
+        }
         }
 
+    &_img {
+        max-width: 450px;
+        height: 294px;
+
+        @media (min-width: 768px) {
+            max-width: 354px;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 370px;
+        }
+    }
+
     &__description-box {
-        width: 370px;
+        max-width: 450px;
         height: 294px;
         background-color: rgba(33, 150, 243, 0.9);
         padding: 63px 24px;
         transition: transform 250ms var(--brand-timefn);
+
+        @media (min-width: 768px) {
+            max-width: 354px;
+        }
+    
+        @media (min-width: 1200px) {
+            max-width: 370px;
+        }
         }
 
     &__item:hover &__description-box {

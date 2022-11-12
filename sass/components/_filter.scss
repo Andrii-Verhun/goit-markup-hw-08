@@ -1,9 +1,13 @@
 .filter {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     gap: 8px;
+
+    @media (min-width: 768px) {
+        justify-content: center;
+    }
 
     &__item {
             font-family: inherit;
