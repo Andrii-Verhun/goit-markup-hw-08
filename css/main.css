@@ -1032,11 +1032,18 @@ input {
 
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .socials {
@@ -1159,10 +1166,15 @@ input {
 }
 .team__list {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+  max-width: 450px;
+}
+@media (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
 .team__item {
   background: #FFF;
@@ -1170,6 +1182,22 @@ input {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+}
+.team__foto {
+  width: 450px;
+  height: 460px;
+}
+@media (min-width: 768px) {
+  .team__foto {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media (min-width: 1200px) {
+  .team__foto {
+    width: 270px;
+    height: 260px;
+  }
 }
 .team__member-name {
   font-weight: 500;

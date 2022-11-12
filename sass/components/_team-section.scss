@@ -3,8 +3,12 @@
 
     &__list {
             list-style-type: none;
-            display: flex;
-            gap: 30px;
+            max-width: 450px;
+
+            @media (min-width: 768px) {
+                display: flex;
+                gap: 30px;
+            }
         }
 
     &__item {
@@ -13,6 +17,21 @@
         border-radius: 0px 0px 4px 4px;
         padding-bottom: 30px;
         }
+
+    &__foto {
+        width: 450px;
+        height: 460px;
+
+        @media (min-width: 768px) {
+            width: 354px;
+            height: 374px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 270px;
+            height: 260px;
+        }
+    }
 
     &__member-name {
         font-weight: 500;
