@@ -249,22 +249,59 @@ input {
   background-color: var(--brand-color-bcg);
   padding: 60px 0px;
 }
-.footer__conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  gap: 70px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer__conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 165px;
+       -moz-column-gap: 165px;
+            column-gap: 165px;
+    row-gap: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 .footer__adress {
   width: 231px;
   height: 132px;
 }
+@media (max-width: 767px) {
+  .footer__adress {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__adress {
+    margin-right: 70px;
+  }
+}
 .footer__logo {
   display: block;
   margin-bottom: 20px;
+}
+@media (max-width: 1199px) {
+  .footer__logo {
+    text-align: center;
+  }
 }
 .footer__logo--white {
   color: #FFF;
@@ -275,7 +312,17 @@ input {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media (min-width: 1200px) {
+  .footer__physical-address {
+    margin-bottom: 9px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer__physical-address {
+    text-align: center;
+  }
 }
 .footer__contacts {
   font-style: normal;
@@ -291,8 +338,28 @@ input {
 .footer__contacts:hover, .footer__contacts:focus {
   color: var(--brand-color);
 }
+@media (max-width: 1199px) {
+  .footer__contacts {
+    text-align: center;
+  }
+}
 .footer__contacts:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media (min-width: 1200px) {
+  .footer__contacts:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__scials {
+    margin-right: 93px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__scials {
+    margin-bottom: 60px;
+  }
 }
 .footer__invitation {
   font-weight: 700;
@@ -303,13 +370,39 @@ input {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+@media (max-width: 1199px) {
+  .footer__invitation {
+    text-align: center;
+  }
+}
 .footer__form {
-  width: 570px;
-  margin-left: auto;
   position: relative;
 }
+@media (min-width: 768px) {
+  .footer__form {
+    width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__form {
+    width: 570px;
+    height: 86px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__form {
+    max-width: 450px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer__form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .footer__email {
-  width: 358px;
+  display: block;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -325,12 +418,16 @@ input {
   outline: none;
   border-color: var(--brand-color);
 }
+@media (min-width: 1200px) {
+  .footer__email {
+    width: 358px;
+  }
+}
 .footer__send-button {
   width: 200px;
   height: 50px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  display: block;
   background: var(--brand-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -348,6 +445,20 @@ input {
 }
 .footer__send-button:hover, .footer__send-button:focus {
   background: #188CE8;
+}
+@media (max-width: 1199px) {
+  .footer__send-button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__send-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 .footer__send-icon {
   position: absolute;
