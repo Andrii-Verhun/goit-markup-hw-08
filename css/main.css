@@ -43,7 +43,12 @@ input {
 }
 
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+@media (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }
 
 .is-hidden {
@@ -1095,6 +1100,11 @@ input {
 
 .specializations {
   padding-bottom: 94px;
+}
+@media (max-width: 1200px) {
+  .specializations {
+    display: none;
+  }
 }
 .specializations__list {
   list-style-type: none;
