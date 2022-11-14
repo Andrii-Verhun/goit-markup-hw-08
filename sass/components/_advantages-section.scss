@@ -14,7 +14,11 @@
             margin-right: auto;
             margin-left: auto;
             max-width: 450px;
-            margin-bottom: 30px;
+            
+            
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
         }
 
         @media (min-width: 768px) {

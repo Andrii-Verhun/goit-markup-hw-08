@@ -91,6 +91,8 @@ input {
     margin-right: auto;
     margin-left: auto;
     max-width: 450px;
+  }
+  .advantages__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -226,7 +228,7 @@ input {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   gap: 8px;
 }
 @media (min-width: 768px) {
@@ -234,6 +236,12 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 .filter__item {
@@ -1109,9 +1117,6 @@ input {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 .projects__item {
   background: #FFF;
@@ -1119,8 +1124,6 @@ input {
   transition: -webkit-box-shadow 250ms var(--brand-timefn);
   transition: box-shadow 250ms var(--brand-timefn);
   transition: box-shadow 250ms var(--brand-timefn), -webkit-box-shadow 250ms var(--brand-timefn);
-  margin-left: auto;
-  margin-right: auto;
 }
 .projects__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
